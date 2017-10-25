@@ -1,0 +1,27 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "rules": {
+        "linebreak-style": 0,
+        "no-param-reassign": 0,
+        "no-return-assign": 0,
+        "max-len": 0,
+        "no-nested-ternary": 0,
+    },
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack.config.js"
+            }
+        }
+    },
+    "env": {
+        "browser": true,
+        "jasmine": true
+    }
+}
