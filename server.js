@@ -42,7 +42,7 @@ const PORTMONGOSE = 27017;
 
 
 function connect() {
-  //return mongoose.connect('mongodb://draker:239857@ds127065.mlab.com:27065/rol').connection;
+  //return mongoose.connect('mongodb://<user>:<password>@<host>:><port>/<db>').connection;
   return mongoose.connect(`mongodb://localhost:${PORTMONGOSE}/${DB}`).connection;
 }
 
