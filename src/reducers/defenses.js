@@ -1,16 +1,10 @@
-import { ACTION_TYPES } from 'actions/defenses';
+import { ACTION_TYPES } from '../actions/defenses';
 
 const INITIAL_STATE = {
   defenses: [],
   loading: false,
   error: false,
 };
-
-/*
-function getTotalBonus(defense) {
-  return defense.totalBonus === 'undefined' ? 0 : defense.totalBonus;
-}
-*/
 
 export function recalculateTotalBonus(state) {
   state.defenses.map(defense => defense.totalBonus = 0);

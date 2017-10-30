@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from 'actions/damage';
+import { ACTION_TYPES } from '../actions/damage';
 
 const INITIAL_STATE = {
   staticBonuses: [

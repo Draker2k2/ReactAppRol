@@ -14,7 +14,8 @@ export const buffToggle = name => (dispatch) => {
 };
 
 export const getData = () => (dispatch) => {
-  const request = axios(`http://localhost:${PORT}/buffs/`);
+  //const request = axios(`http://localhost:${PORT}/buffs/`);
+  const request = axios(`https://secret-dawn-75685.herokuapp.com/buffs/`);
   dispatch({ type: ACTION_TYPES.FETCH_DATA });
   request
   .then((response) => {

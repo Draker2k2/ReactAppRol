@@ -23,7 +23,8 @@ export const toggleIncrement = (name, checked, abilityName, bonusType, value) =>
 */
 
 export const getData = () => (dispatch) => {
-  const request = axios(`http://localhost:${PORT}/items/`);
+  //const request = axios(`http://localhost:${PORT}/items/`);
+  const request = axios(`https://secret-dawn-75685.herokuapp.com/items/`);
   dispatch({ type: ACTION_TYPES.FETCH_DATA });
   request
   .then((response) => {

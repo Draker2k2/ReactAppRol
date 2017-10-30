@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Buffs from 'components/Buffs';
-import { getData, buffToggle } from 'actions/buffs';
+import Buffs from '../../components/Buffs';
+import { getData, buffToggle } from '../../actions/buffs';
 
 const mapStateToProps = state => (
   {

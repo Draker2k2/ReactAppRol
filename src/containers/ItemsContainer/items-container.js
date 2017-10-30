@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Item from 'components/Item';
-import { getData, itemToggle } from 'actions/items';
+import Item from '../../components/Item';
+import { getData, itemToggle } from '../../actions/items';
 
 const mapStateToProps = state => (
   {

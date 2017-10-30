@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from 'actions/history';
+import { ACTION_TYPES } from '../actions/history';
 
 const INITIAL_STATE = {
   history: [],

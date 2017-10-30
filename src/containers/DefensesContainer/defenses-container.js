@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Defenses from 'components/Defenses';
-import { getData } from 'actions/defenses';
+import Defenses from '../../components/Defenses';
+import { getData } from '../../actions/defenses';
 
 
 const mapStateToProps = state => ({

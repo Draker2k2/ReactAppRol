@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Feats from 'components/Feats';
-import { getData, featToggle } from 'actions/feats';
+import Feats from '../../components/Feats';
+import { getData, featToggle } from '../../actions/feats';
 
 const mapStateToProps = state => (
   {

@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from 'actions/abilities';
+import { ACTION_TYPES } from '../actions/abilities';
 
 const INITIAL_STATE = {
   abilities: [],

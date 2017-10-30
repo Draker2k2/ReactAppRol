@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from 'actions/feats';
+import { ACTION_TYPES } from '../actions/feats';
 
 const INITIAL_STATE = {
   feats: [],

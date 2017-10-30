@@ -5,18 +5,17 @@ export const ACTION_TYPES = {
   FETCH_DATA_SUCCESFULL: 'DEFENSES_fetch_data_succesfull',
   FETCH_DATA_ERROR: 'DEFENSES_fetch_data_error',
   INCREMENT_DEFENSE: 'incrementDefense',
-  CALCULATE_BONUS: 'DEFENSES_calculate_bonus',
 };
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 export const getData = () => (dispatch) => {
-  const request = axios(`http://localhost:${PORT}/defenses/`);
+  //const request = axios(`http://localhost:${PORT}/defenses/`);
+  const request = axios(`https://secret-dawn-75685.herokuapp.com/defenses/`);
   dispatch({ type: ACTION_TYPES.FETCH_DATA });
   request
   .then((response) => {
     dispatch({ type: ACTION_TYPES.FETCH_DATA_SUCCESFULL, payload: response.data });
-    dispatch({ type: ACTION_TYPES.CALCULATE_BONUS });
   })
   .catch((error) => {
     dispatch({ type: ACTION_TYPES.FETCH_DATA_ERROR, payload: error.message });

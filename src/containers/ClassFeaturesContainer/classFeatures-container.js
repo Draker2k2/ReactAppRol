@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import ClassFeatures from 'components/ClassFeatures';
-import { getData, classFeatureToggle } from 'actions/classFeatures';
+import ClassFeatures from '../../components/ClassFeatures';
+import { getData, classFeatureToggle } from '../../actions/classFeatures';
 
 const mapStateToProps = state => (
   {

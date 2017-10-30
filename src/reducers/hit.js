@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from 'actions/hit';
+import { ACTION_TYPES } from '../actions/hit';
 
 const INITIAL_STATE = {
   bab: 6, // SB3 + F2 + R2

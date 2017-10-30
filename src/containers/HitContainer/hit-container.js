@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Hit from 'components/Hit';
-import { getData } from 'actions/hit';
+import Hit from '../../components/Hit';
+import { getData } from '../../actions/hit';
 
 const mapStateToProps = state => ({
   dexterityMod: state.abilities.dexMod,

@@ -14,7 +14,8 @@ export const classFeatureToggle = name => (dispatch) => {
 };
 
 export const getData = () => (dispatch) => {
-  const request = axios(`http://localhost:${PORT}/classFeatures/`);
+  //const request = axios(`http://localhost:${PORT}/classFeatures/`);
+  const request = axios(`https://secret-dawn-75685.herokuapp.com/classFeatures/`);
   dispatch({ type: ACTION_TYPES.FETCH_DATA });
   request
   .then((response) => {

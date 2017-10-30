@@ -13,7 +13,8 @@ export const ACTION_TYPES = {
 const PORT = process.env.PORT || 3000;
 
 export const getData = () => (dispatch) => {
-  const request = axios(`http://localhost:${PORT}/hit/`);
+  //const request = axios(`http://localhost:${PORT}/hit/`);
+  const request = axios(`https://secret-dawn-75685.herokuapp.com/hit/`);
   dispatch({ type: ACTION_TYPES.FETCH_DATA });
   request
   .then((response) => {

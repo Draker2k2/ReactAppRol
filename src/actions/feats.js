@@ -14,7 +14,8 @@ export const featToggle = name => (dispatch) => {
 };
 
 export const getData = () => (dispatch) => {
-  const request = axios(`http://localhost:${PORT}/feats/`);
+  //const request = axios(`http://localhost:${PORT}/feats/`);
+  const request = axios(`https://secret-dawn-75685.herokuapp.com/feats/`);
   dispatch({ type: ACTION_TYPES.FETCH_DATA });
   request
   .then((response) => {

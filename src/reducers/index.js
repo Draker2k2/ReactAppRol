@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import productsReducer from './products';
-import itemsReducer from './items';
-import usersReducer from './users';
 import abilitiesReducer from './abilities';
 import defensesReducer from './defenses';
+import itemsReducer from './items';
 import skillsReducer from './skills';
 import buffsReducer from './buffs';
 import hitReducer from './hit';
@@ -15,9 +13,9 @@ import historyReducer from './history';
 
 const rootReducer = combineReducers({
   state: (state = {}) => state,
-  products: productsReducer,
+  abilities: abilitiesReducer,
+  defenses: defensesReducer,
   items: itemsReducer,
-  users: usersReducer,
   form: formReducer,
   defenses: defensesReducer,
   abilities: abilitiesReducer,

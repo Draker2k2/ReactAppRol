@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import SkillsContainer from 'components/Skills';
-import { getData } from 'actions/skills';
+import SkillsContainer from '../../components/Skills';
+import { getData } from '../../actions/skills';
 
 const mapStateToProps = state => ({
   skills: state.skills.skills,

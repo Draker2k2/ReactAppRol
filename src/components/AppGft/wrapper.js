@@ -8,14 +8,13 @@ const Wrapper = styled.div`
     }
   }
   body {
-    background-image: url("src/img/body.png");
+    background-image: url("body.png");
     background-color: #cccccc;
   }
   .img {
-    background-image: url("src/img/body.png");
+    background-image: url("body.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     width: 100%;
     height: 100%;
   }

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Damage from 'components/Damage';
+import Damage from '../../components/Damage';
 
 const mapStateToProps = state => ({
   dexterityMod: state.abilities.dexMod,

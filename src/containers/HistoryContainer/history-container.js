@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { getData, addItem } from 'actions/history';
-import History from 'components/History';
+import { getData, addItem } from '../../actions/history';
+import History from '../../components/History';
 
 const mapStateToProps = state => (
   {
